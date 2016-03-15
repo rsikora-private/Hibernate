@@ -46,6 +46,7 @@ public class Main {
         }
         session = getSession();
         final Author author = (Author)session.get(Author.class, id);
+     //   System.out.print(author.getAuthorExt().getName());
         session.flush();
 
 
@@ -59,7 +60,7 @@ public class Main {
          //   session.save(author1);
 
             AuthorExt authorExt = new AuthorExt();
-            authorExt.setName("detail");
+            authorExt.setName("detail44444");
 
             Author author = new Author();
             author.setName("aut" + i);

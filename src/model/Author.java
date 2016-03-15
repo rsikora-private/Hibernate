@@ -22,6 +22,8 @@ public class Author {
     @Column(name="PHONE_NUMBER")
     private List<String> phones = new ArrayList<>(); */
 
+    //@OneToOne(mappedBy = "author", optional = false, fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+
     @OneToOne(mappedBy="author", fetch=FetchType.LAZY, cascade = CascadeType.ALL, optional = false)
     private AuthorExt authorExt;
 

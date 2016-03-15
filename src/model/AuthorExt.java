@@ -19,6 +19,9 @@ public class AuthorExt {
 
     private String name;
 
+    //@OneToOne(fetch = FetchType.LAZY)
+    //@JoinColumn(name = "id", nullable=false)
+
     @OneToOne
     @PrimaryKeyJoinColumn
     private Author author;
@@ -31,9 +34,9 @@ public class AuthorExt {
         this.name = name;
     }
 
-    public Author getAuthor() {
-        return author;
-    }
+    //public Author getAuthor() {
+   //     return author;
+   // }
 
     public void setAuthor(Author author) {
         this.author = author;
